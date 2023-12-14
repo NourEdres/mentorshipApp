@@ -1,0 +1,2 @@
+(self.webpackChunkclient=self.webpackChunkclient||[]).push([[4887],{1291:e=>{e.exports=function(e){return{name:"Node REPL",contains:[{className:"meta",starts:{end:/ |$/,starts:{end:"$",subLanguage:"javascript"}},variants:[{begin:/^>(?=[ ]|$)/},{begin:/^\.\.\.(?=[ ]|$)/}]}]}}}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_highlight_nodeRepl.6c1150d1.chunk.js.map
