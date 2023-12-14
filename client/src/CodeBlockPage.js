@@ -16,12 +16,12 @@ const CodeBlockPage = () => {
     const [socket, setSocket] = useState(null);
 
     useEffect(() => {
-        const newSocket = io('https://mentorship-app.onrender.com');
+        const newSocket = io('https://mentorshipapp.onrender.com');
         setSocket(newSocket);
 
         const fetchCodeBlock = async () => {
             try {
-                const response = await fetch(`https://mentorship-app.onrender.com/api/codeblocks/${id}`);
+                const response = await fetch(`https://mentorshipapp.onrender.com/api/codeblocks/${id}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -54,7 +54,7 @@ const CodeBlockPage = () => {
     const handleSave = async () => {
         if (user.role !== 'Mentor') {
             try {
-                const response = await fetch(`https://mentorship-app.onrender.com/api/codeblocks/${id}`, {
+                const response = await fetch(`https://mentorshipapp.onrender.com/api/codeblocks/${id}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',

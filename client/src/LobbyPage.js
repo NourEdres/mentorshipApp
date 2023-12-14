@@ -13,7 +13,7 @@ const LobbyPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://mentorship-app.onrender.com/api/codeblocks');
+                const response = await fetch('https://mentorshipapp.onrender.com/api/codeblocks');
                 const data = await response.json();
                 const formattedBlocks = data.map(block => ({
                     ...block,

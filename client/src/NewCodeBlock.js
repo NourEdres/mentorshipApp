@@ -9,7 +9,7 @@ export default function NewCodeBlock() {
 
         const newCodeBlock = { title, correctCode };
 
-        fetch('https://mentorship-app.onrender.com/api/codeblocks', {
+        fetch('https://mentorshipapp.onrender.com/api/codeblocks', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
